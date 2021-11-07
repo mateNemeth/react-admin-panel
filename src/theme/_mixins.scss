@@ -1,0 +1,46 @@
+@import "./variables";
+
+@mixin baseInputContainer {
+    display: flex;
+    flex-direction: column;
+    margin: $inputContainerTopMargin $inputContainerHorizontalMargin $inputContainerBottomMargin;
+    position: relative;
+}
+
+@mixin baseInputLabel {
+    font-size: 16px;
+    color: $labelColor;
+    display: flex;
+    align-items: center;
+}
+
+@mixin baseInputControl {
+    background-color: white;
+    border: 1px solid $inputBorderColor;
+    color: $inputTextColor;
+    border-radius: 0;
+    font-size: 20px;
+    padding: $inputPadding;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        color: $inputPlaceholderColor;
+    }
+
+    &.invalid {
+        background-color: $inputInvalidBgColor;
+        color: $inputInvalidTextColor;
+        border: 1px solid $inputInvalidTextColor;
+    }
+}
+
+@mixin baseErrorMessage {
+    color: $inputInvalidTextColor;
+    font-size: 12px;
+    position: absolute;
+    bottom: -15px;
+    margin: 0;
+}

@@ -1,0 +1,29 @@
+// ############ COLORS ############
+$black: #000000;
+$blue: #17447D;
+$red: #893737;
+$yellow: #F7A81E;
+
+$headerHeight: 60px;
+$sidebarOpenWidth: 240px;
+$sidebarClosedWidth: 3rem;
+
+// ############ FORMS & CONTROLS ############
+
+// #### SPACING
+$inputPadding: 8px;
+$inputContainerTopMargin: 12px;
+$inputContainerHorizontalMargin: 0px;
+$inputContainerBottomMargin: 18px;
+
+// #### INPUT COLORS
+$labelColor: $blue;
+$inputBgColor: white;
+$inputBorderColor: lighten($blue, 60);
+$inputTextColor: $blue;
+$inputPlaceholderColor: lighten($blue, 60);
+
+
+// #### ERROR
+$inputInvalidBgColor: #FFF2F4;
+$inputInvalidTextColor: #E03E52;

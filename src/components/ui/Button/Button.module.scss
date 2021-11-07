@@ -1,0 +1,21 @@
+@import '../../../theme/variables';
+
+
+.button {
+  border: none;
+  background-color: $blue;
+  color: white;
+  padding: 0.5rem;
+  width: 100%;
+  margin: 12px 0;
+  
+  &:hover {
+    background-color: darken($color: $blue, $amount: 10);
+    cursor: pointer;
+  }
+
+  &.disabled {
+    background-color: lighten($color: $blue, $amount: 7);
+    cursor: not-allowed;
+  }
+}

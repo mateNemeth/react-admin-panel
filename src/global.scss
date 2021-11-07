@@ -1,0 +1,27 @@
+@import 'theme/variables';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  
+  &::-webkit-scrollbar {
+    width: 11px;
+    height: 11px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: lighten($color: $blue, $amount: 10);
+    border-radius: 16px;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
